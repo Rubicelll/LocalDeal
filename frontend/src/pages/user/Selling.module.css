@@ -1,0 +1,35 @@
+/* sell section */
+.sell-section__title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.sell-section__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.sell-card{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    /* border: 1px solid black; */
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+.sell-card__number{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.sell-card__icon{
+    display: flex;
+    align-items: baseline;
+    font-size: 1.25rem;
+}
+.sell-card__description{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+}
