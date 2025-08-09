@@ -1,14 +1,15 @@
 .sidebar{
     display: none;
-position: fixed;
-top: 60px;
-left: 0;
-overflow-y: auto;
-width: 350px;
-height: 100vh;
-/* background-color: aqua; */
-padding: 16px;
-background-color: white;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow-y: auto;
+    width: 350px;
+    height: 100vh;
+    /* background-color: aqua; */
+    padding: 16px;
+    background-color: white;
+    padding-bottom: 50px;
 }
 
 .sidebar__header{

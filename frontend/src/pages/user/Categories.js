@@ -53,9 +53,9 @@ function Categories(){
                 {topCategories.length === 0 ? (<p>There are no categories</p>) : (
                     <ul className={styles["category__list"]}>
                         {
-                            topCategories.map((c) => (                                    
+                            topCategories.map((c) => (
                                 <li className={styles["category__list--item"]} key={c.slug}>
-                                    <Link to={`/${c.slug}`} className={styles["category__list--link"]}><div className={styles["category__list--icon"]}><ion-icon name={c.icon}></ion-icon></div>{c.name}</Link>
+                                    <Link to={`/products-by-category?slug=${c.slug}&category=${c.name}`} className={styles["category__list--link"]}><div className={styles["category__list--icon"]}><ion-icon name={c.icon}></ion-icon></div>{c.name}</Link>
                                 </li>
                             ))
                         }
