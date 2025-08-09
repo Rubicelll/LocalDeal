@@ -10,6 +10,7 @@ import Home from '../pages/user/Home';
 import Categories from '../pages/user/Categories';
 import ProducsByCategory from '../pages/user/ProductsByCategory';
 import Selling from '../pages/user/Selling'
+import Notifications from '../pages/user/Notifications'
 import CreateProduct from '../CreateProduct';
 
 const PrivateRoute = ({ token }) => {
@@ -43,7 +44,7 @@ const PrivateRoute = ({ token }) => {
             {/* protected routes */}
             <Route path="/" element={<Home />} /> { /* all products */ }
             <Route path="/products/" element={<Home />} /> { /* products by category */ }
-            <Route path="/notifications" element={<Selling />} />
+            <Route path="/notifications" element={<Notifications />} />
             <Route path="/inbox" element={<Selling />} />
             <Route path="/marketplace-access" element={<Selling />} />
             <Route path="/buying" element={<Selling />} />
