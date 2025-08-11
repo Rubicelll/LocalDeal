@@ -1,0 +1,105 @@
+/* inbox section */
+.inbox-section__title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.inbox-section__filters{
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.inbox-section__buttons{
+    padding: 8px;
+    margin-bottom: 16px;
+}
+.inbox-section__sell-button, .inbox-section__buy-button{
+    font-weight: bold;
+    color: gray;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.inbox-section__sell-button:hover, .inbox-section__buy-button:hover{
+    background-color: var(--very-light-grey);
+    cursor: pointer;
+}
+
+.inbox-section__sell-button.active, .inbox-section__buy-button.active{
+    color: var(--hospital-green);
+    border-bottom: 2px solid var(--hospital-green);
+    border-radius: 0%;
+}
+.inbox-section__pill-list{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+
+}
+.inbox-section__pill{
+    font-weight: bold;
+    background-color: var(--mid-light-grey);
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+.inbox-section__pill:hover{
+    cursor: pointer;
+    background-color: var(--hospital-green-light);
+    color: var(--hospital-green-strong);
+}
+
+
+.inbox-section__cards{
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.inbox-card:hover{
+    background-color: var(--very-light-grey);
+}
+.inbox-card{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+    padding: 12px;
+    border-radius: 8px;
+}
+.inbox-card__image{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+.inbox-card__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inbox-card__title{
+    margin: 0;
+    font-weight: bold;
+}
+.inbox-card__description{
+    font-weight: bol;
+    margin: 0;
+}
+.inbox-card__label{
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    width:max-content;
+    background-color: var(--very-light-grey);
+    margin: 0;
+}
+.inbox-card__date{
+    margin: 0;
+    margin-right: 12px;
+    color: var(--very-light-pink);
+}

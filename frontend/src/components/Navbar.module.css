@@ -72,6 +72,7 @@
 display: grid;
 place-items: center;
 background-color: var(--very-light-grey);
+color: black;
 height: 36px;
 width: 36px;
 border-radius: 50%;

@@ -23,10 +23,16 @@ function Navbar(){
                 <div className={styles["navbar__right"]}>
                     <ul>
                         <li>
-                            <div className={styles["navbar__chat"]}><ion-icon name="chatbubble-ellipses-sharp"></ion-icon></div>
+                            <Link className={styles["navbar--link"]} to={"/inbox"}>
+                                <div className={styles["navbar__chat"]}>
+                                    <ion-icon name="chatbubble-ellipses-sharp"></ion-icon>
+                                </div>
+                            </Link>
                         </li>
                         <li>
-                            <div className={styles["navbar__notifications"]}><ion-icon name="notifications-sharp"></ion-icon></div>
+                            <Link to={"/notifications"}>
+                                <div className={styles["navbar__notifications"]}><ion-icon name="notifications-sharp"></ion-icon></div>
+                            </Link>
                         </li>
                         <li>
                             <button id="profile-menu" onClick={toggleMenu} className={styles["navbar__profile"]}><ion-icon name="person-circle-sharp" className={styles["navbar__profile-img"]}></ion-icon><div className={styles["navbar__profile-bullet"]}><ion-icon name="chevron-down-sharp"></ion-icon></div></button>
