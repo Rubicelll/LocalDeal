@@ -4,7 +4,7 @@ const Product = require('../models/Product');
 exports.createProduct = async (req, res) => {
     try {
         const { title, description, price, lat, lng } = req.body;
-        const imageUrl = req.file ? `/uploads/${req.file.filename}` : null;
+        const imageUrl = req.file ? `/uploads/products/${req.file.filename}` : null;
 
         const newProduct = new Product({
         userId: req.userId,
@@ -16,6 +16,7 @@ exports.createProduct = async (req, res) => {
             coordinates: [lng, lat],
         },
         image: imageUrl,
+        categoryId: "6899418153e9a6586b32a041",
         });
 
         const saved = await newProduct.save();
@@ -68,7 +69,7 @@ exports.getProductsByCategory = async (req, res) => {
     const category = await Category.findOne({
       slug: slug
     });
-
+    
     if (category) {
       const products = await Product.find({
         categoryId: category._id

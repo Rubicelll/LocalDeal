@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema({
     type: { type: String, enum: ['Point'], default: 'Point' },
     coordinates: { type: [Number], required: true }, // [lng, lat]
   },
-  image: String,
+  image: [ String ],
   details: String,
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   categoryId: { type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true },

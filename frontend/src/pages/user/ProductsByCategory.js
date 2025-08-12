@@ -29,7 +29,7 @@ function ProducsByCategory() {
     };
 
     fetchProducts();
-  }, []);
+  }, [category]);
 
   if (loading) return (
     <>
@@ -60,7 +60,7 @@ function ProducsByCategory() {
                   <div className={styles["card"]} key={p._id}>
                     <img className={styles["card__image"]} src={
                       (p.image 
-                      ? process.env.REACT_APP_SERVER_URI + p.image
+                      ? process.env.REACT_APP_SERVER_URI+ "/uploads/products/" + p.image
                       : default_product_image)}/>
                     <div className={styles["card__info"]}>
                       <div>

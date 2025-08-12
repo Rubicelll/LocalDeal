@@ -128,60 +128,9 @@ function Asidebar(){
                             </li>
                         ))
                     }
-                    {/* <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="home-sharp"></ion-icon></div>property rentals</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="shirt-sharp"></ion-icon></div>apparel</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="pricetag-sharp"></ion-icon></div>classifieds</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="phone-portrait-sharp"></ion-icon></div>electronics</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="videocam-sharp"></ion-icon></div>enternainment</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="heart-sharp"></ion-icon></div>family</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="pricetags-sharp"></ion-icon></div>free stuff</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="hammer-sharp"></ion-icon></div>garden & outdoor</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="color-palette-sharp"></ion-icon></div>hobbies</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="home-sharp"></ion-icon></div>home goods</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="build-sharp"></ion-icon></div>home improvement supplies</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="home-sharp"></ion-icon></div>home sales</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="musical-notes-sharp"></ion-icon></div>musical instruments</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="pricetag-sharp"></ion-icon></div>office supplies</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="paw-sharp"></ion-icon></div>pet supplies</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="walk-sharp"></ion-icon></div>sporting goods</Link>
-                    </li>
-                    <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
-                        <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="game-controller-sharp"></ion-icon></div>toys & games</Link>
-                    </li>
                     <li className={styles["sidebar__list--item"]} onClick={handleMenuCategories}>
                         <Link to="/" className={styles["sidebar__list--link"]}><div className={styles["sidebar__list--icon"]}><ion-icon name="people-circle-sharp"></ion-icon></div>buy and sell groups</Link>
-                    </li> */}
+                    </li>
                 </ul>
                 )}
         </aside>

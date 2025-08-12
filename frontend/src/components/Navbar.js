@@ -13,6 +13,8 @@ function toggleMenu(){
 
 
 function Navbar(){
+    const user = JSON.parse(localStorage.getItem('user'))
+
     return (
         <>
             <nav className={styles["navbar"]}>
@@ -43,7 +45,7 @@ function Navbar(){
             <div id="modal-profile" className={styles["modal-profile"]}>
                 <div className={styles["card"]}>
                     <img className={styles["card__image"]} src={default_image_profile}/>
-                    <p className={styles["card__name"]}>Rubicel Rojo</p>
+                    <p className={styles["card__name"]}>{`${user.name} ${user.lastname}`}</p>
                 </div>
                 <ul className={styles["card__list"]}>
                     <li className={styles["card__list--item"]}>

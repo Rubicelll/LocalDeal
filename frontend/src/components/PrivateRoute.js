@@ -50,7 +50,7 @@ const PrivateRoute = ({ token }) => {
             <Route path="/marketplace-access" element={<Selling />} />
             <Route path="/buying" element={<Selling />} />
             <Route path="/selling" element={<Selling />} />
-            <Route path="/create" element={<CreateProduct />} />
+            <Route path="/create" element={<CreateProduct token={token} />} />
             <Route path="/nearby" element={<Home />} />
             <Route path="/recovery" element={<Home />} />
             <Route path="/categories" element={<Categories />} />

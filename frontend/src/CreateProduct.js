@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function CreateProduct({token}) {
+  console.log(token);
+  
   const [formData, setFormData] = useState({
     title: '',
     description: '',

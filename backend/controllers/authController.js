@@ -22,9 +22,7 @@ exports.register = async (req, res) => {
   }
 };
 
-exports.login = async (req, res) => {
-  console.log("step 1");
-  
+exports.login = async (req, res) => {  
   try {
     const { email, password } = req.body;
     const user = await User.findOne({ email });
@@ -35,7 +33,7 @@ exports.login = async (req, res) => {
 
     const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '7d' });
 
-    res.json({ token, user: { id: user._id, name: user.name, email: user.email } });
+    res.json({ token, user: { id: user._id, name: user.name, lastname: user.lastname, email: user.email, avatar: user.avatar } });
   } catch (err) {
     res.status(500).json({ msg: "Server error", error: err.message });
   }
